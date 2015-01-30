@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Shepsy Kickstart Blog feature.
+ */
+
+include_once 'shepsy_kickstart_blog.features.inc';

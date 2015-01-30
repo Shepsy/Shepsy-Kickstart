@@ -1,0 +1,69 @@
+name = Shepsy Kickstart
+description = An install profile to get you going straight away.
+core = 7.x
+
+; Core modules
+; ======================================================
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = taxonomy
+dependencies[] = update
+
+; Contrib modules
+; ======================================================
+dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
+dependencies[] = autocomplete_deluxe
+dependencies[] = bean
+dependencies[] = block_class
+dependencies[] = conditional_fields
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = custom_add_another
+dependencies[] = devel
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = fe_block
+dependencies[] = field_collection
+dependencies[] = field_group
+dependencies[] = filter_perms
+dependencies[] = globalredirect
+dependencies[] = googleanalytics
+dependencies[] = image_class
+dependencies[] = image_url_formatter
+dependencies[] = insert_view
+dependencies[] = jquery_update
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = logintoboggan
+dependencies[] = media
+dependencies[] = media_crop
+dependencies[] = menu_block
+dependencies[] = metatag
+dependencies[] = pathauto
+dependencies[] = pathologic
+; dependencies[] = phpmailer
+dependencies[] = references
+dependencies[] = semanticviews
+dependencies[] = statistics
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = token_insert
+; dependencies[] = variable
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = webform
