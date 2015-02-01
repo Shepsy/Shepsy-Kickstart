@@ -54,6 +54,7 @@ dependencies[] = media
 dependencies[] = media_crop
 dependencies[] = menu_block
 dependencies[] = metatag
+dependencies[] = module_filter
 dependencies[] = pathauto
 dependencies[] = pathologic
 ; dependencies[] = phpmailer
@@ -67,3 +68,7 @@ dependencies[] = token_insert
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = webform
+
+; Shepsy Kickstart modules
+; ======================================================
+dependencies[] = shepsy_kickstart_text_formats

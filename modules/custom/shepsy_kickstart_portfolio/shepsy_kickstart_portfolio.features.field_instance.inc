@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * shepsy_kickstart_blog.features.field_instance.inc
+ * shepsy_kickstart_portfolio.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function shepsy_kickstart_blog_field_default_field_instances() {
+function shepsy_kickstart_portfolio_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-blog_post-body'
-  $field_instances['node-blog_post-body'] = array(
-    'bundle' => 'blog_post',
+  // Exported field_instance: 'node-portfolio_item-body'
+  $field_instances['node-portfolio_item-body'] = array(
+    'bundle' => 'portfolio_item',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -56,9 +56,9 @@ function shepsy_kickstart_blog_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_blog_category'
-  $field_instances['node-blog_post-field_blog_category'] = array(
-    'bundle' => 'blog_post',
+  // Exported field_instance: 'node-portfolio_item-field_portfolio_category'
+  $field_instances['node-portfolio_item-field_portfolio_category'] = array(
+    'bundle' => 'portfolio_item',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => NULL,
@@ -70,7 +70,7 @@ function shepsy_kickstart_blog_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -80,7 +80,7 @@ function shepsy_kickstart_blog_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_blog_category',
+    'field_name' => 'field_portfolio_category',
     'label' => 'Category',
     'required' => 0,
     'settings' => array(
@@ -100,13 +100,13 @@ function shepsy_kickstart_blog_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_blog_fi'
-  $field_instances['node-blog_post-field_blog_fi'] = array(
-    'bundle' => 'blog_post',
+  // Exported field_instance: 'node-portfolio_item-field_portfolio_images'
+  $field_instances['node-portfolio_item-field_portfolio_images'] = array(
+    'bundle' => 'portfolio_item',
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Choose an image to represent this post.',
+    'description' => 'Upload images for this portfolio item. The first image will be used as the featured image to represent this post around the site.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -117,7 +117,7 @@ function shepsy_kickstart_blog_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -127,15 +127,15 @@ function shepsy_kickstart_blog_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_blog_fi',
-    'label' => 'Featured image',
+    'field_name' => 'field_portfolio_images',
+    'label' => 'Images',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'custom_add_another' => '',
       'custom_remove' => '',
       'default_image' => 0,
-      'file_directory' => 'blog_fi',
+      'file_directory' => 'portfolio',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -168,8 +168,8 @@ function shepsy_kickstart_blog_field_default_field_instances() {
   t('Begin typing a category name. Existing categories will be shown or you can create new categories.');
   t('Body');
   t('Category');
-  t('Choose an image to represent this post.');
-  t('Featured image');
+  t('Images');
+  t('Upload images for this portfolio item. The first image will be used as the featured image to represent this post around the site.');
 
   return $field_instances;
 }

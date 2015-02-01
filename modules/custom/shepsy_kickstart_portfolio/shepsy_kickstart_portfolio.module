@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Shepsy Kickstart Portfolio feature.
+ */
+
+include_once 'shepsy_kickstart_portfolio.features.inc';
